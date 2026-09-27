@@ -1,0 +1,36 @@
+{
+  "question": "Какая CI-система запускает тесты? Если сведений нет, скажи об этом.",
+  "agents": {
+    "local-guide-A": {
+      "runs": 3,
+      "ok_runs": 3,
+      "median_wall_seconds": 120.14938116999838,
+      "files": {
+        "warm": [
+          "/home/emchik47/projects_2nd_year/ITMOv2/practices/practice_03/lab/results/homework-speed/warm-local-guide-A-1.jsonl"
+        ],
+        "runs": [
+          "/home/emchik47/projects_2nd_year/ITMOv2/practices/practice_03/lab/results/homework-speed/local-guide-A-1.jsonl",
+          "/home/emchik47/projects_2nd_year/ITMOv2/practices/practice_03/lab/results/homework-speed/local-guide-A-2.jsonl",
+          "/home/emchik47/projects_2nd_year/ITMOv2/practices/practice_03/lab/results/homework-speed/local-guide-A-3.jsonl"
+        ]
+      }
+    },
+    "local-guide-B": {
+      "runs": 3,
+      "ok_runs": 3,
+      "median_wall_seconds": 187.88549740500457,
+      "files": {
+        "warm": [
+          "/home/emchik47/projects_2nd_year/ITMOv2/practices/practice_03/lab/results/homework-speed/warm-local-guide-B-1.jsonl"
+        ],
+        "runs": [
+          "/home/emchik47/projects_2nd_year/ITMOv2/practices/practice_03/lab/results/homework-speed/local-guide-B-1.jsonl",
+          "/home/emchik47/projects_2nd_year/ITMOv2/practices/practice_03/lab/results/homework-speed/local-guide-B-2.jsonl",
+          "/home/emchik47/projects_2nd_year/ITMOv2/practices/practice_03/lab/results/homework-speed/local-guide-B-3.jsonl"
+        ]
+      }
+    }
+  },
+  "note": "decode_tokens_per_second is not available for OpenCode sessions"
+}

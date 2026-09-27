@@ -1,0 +1,9 @@
+{
+  "agent": "local-guide-B",
+  "question": "Какая CI-система запускает тесты? Если сведений нет, скажи об этом.",
+  "wall_seconds": 208.15392368200264,
+  "decode_tokens_per_second": null,
+  "returncode": 0,
+  "stderr": "",
+  "output_file": "/home/emchik47/projects_2nd_year/ITMOv2/practices/practice_03/lab/results/homework-speed/warm-local-guide-B-1.jsonl"
+}
