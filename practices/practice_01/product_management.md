@@ -1,55 +1,23 @@
 # Use cases и user stories
 
-Файл ведёт OpenCode. Обсудите с агентом содержание и проверьте предложенный diff. Все дополнения и исправления поручайте агенту в чате.
-
-## Первый рабочий сценарий
-
-**Когда** …, **система** …, **а пользователь получает** …
-
-Не входит в этот сценарий:
-
-- 
-
-## Use case
-
-| Поле | Значение |
-|---|---|
-| Актор |  |
-| Триггер |  |
-| Предусловия |  |
-| Основной результат |  |
-| Ошибка или отказ |  |
-
-```mermaid
-sequenceDiagram
-    actor User as Пользователь
-    participant System as Система
-    participant AI as AI
-    User->>System: Событие или запрос
-    System->>AI: Ограниченный вход и контекст
-    AI-->>System: Предложение
-    System-->>User: Проверяемый результат
-```
-
-## User stories и acceptance criteria
+## Use cases
+- UC1: Ревью одного PR по diff → получить описание, риски, проверки.
+- UC2: Повторный запуск с master prompt → улучшенные выводы.
 
 ```gherkin
-Feature:
-
-  Scenario: Позитивный
-    Given
-    When
-    Then
-
-  Scenario: Негативный или граничный
-    Given
-    When
-    Then
+Feature: Review assistant
+  Scenario: Analyze diff and propose risks
+    Given a pull request diff is provided
+    When the assistant analyzes the diff
+    Then it returns a short change summary
+    And up to three risks with file and line references and evidence
+    And a list of checks to run
 ```
+
+## User stories
+- Как ревьюер, хочу видеть ссылки и доказательства, чтобы быстро проверить риск.
+- Как студент, хочу воспроизводимые шаги запусков P1-01 и P1-02.
 
 ## Как использовали AI
 
-- Для чего:
-- Тип промпта:
-- Строка в [`prompts.md`](prompts.md):
-- Что проверил студент и какие исправления поручил агенту:
+Тип: формулировка сценариев. См. prompts.md (P1-setup).
